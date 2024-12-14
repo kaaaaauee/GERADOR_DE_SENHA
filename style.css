@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #080B1B;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', 'Arial';
+}
+#container{
+    background-color: white;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.textOne{
+    padding: 20px;
+    padding-top: 10px;
+    margin-bottom: -20px;
+    color: #080B1B;
+    font-weight: bolder;
+}
+/* Container do switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Esconde o checkbox padrão */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* O "slider" que cria o botão */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #080B1B; /* Fundo escuro */
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: 0.4s;
+}
+
+/* Círculo interno do botão */
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ffffff; /* Verde do botão */
+    top: 3px;
+    left: 3px;
+    transition: 0.4s;
+}
+
+/* Movimento do botão quando marcado */
+input:checked + .slider:before  {
+    transform: translateX(35px);
+    background-color: #3BEA61;
+}
+.switchText{
+    margin-left: 80px;
+    margin-top: 0px;
+    font-size: 15pt;
+    color: #080B1B;
+    font-weight: 600;
+    width: 250px;
+}
+/* Estilo do grupo de checkboxes */
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* Esconde o input padrão */
+.circle-checkbox input {
+    display: none;
+}
+
+/* Estiliza os círculos */
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3a3a3a; /* Cor do círculo */
+    color: #d1d1d1; /* Cor do número */
+    font-family: Arial, sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 0px;
+}
+
+/* Efeito ao clicar (ativo) */
+.circle-checkbox input:checked + .circle,
+.circle.active {
+    background-color: #00ff62; /* Verde ativo */
+    color: #000; /* Cor preta para o número */
+}
+.textCheckBox{
+    margin-left: 20px;
+    color: #080B1B;
+    font-weight: 600;
+    font-size: 15pt;
+    margin-top: -0px;
+}
+#gerar{
+    height: 65px;
+    width: 40%;
+    margin-left: 20px;
+    background-color: #00ff62;
+    border: none;
+    font-size: 20pt;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+.pass{
+    font-size: 20pt;
+    border-bottom:solid 3px #00ff62;
+    padding-bottom: 11px;
+    margin-left: 20px;
+}

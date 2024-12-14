@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GERADOR DE SENHA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <span class="textOne">
+            <h1>GERE UMA SENHA ALEATORIA</h1>
+        </span>
+
+        <div class="checkbox-group">
+            <p class="textCheckBox">Quantidade de caractere:</p>
+            <label class="circle-checkbox">
+                <input type="radio" name="number" value="6" checked>
+                <span class="circle">6</span>
+            </label>
+            <label class="circle-checkbox">
+                <input type="radio" name="number" value="8">
+                <span class="circle">8</span>
+            </label>
+            <label class="circle-checkbox">
+                <input type="radio" name="number" value="12">
+                <span class="circle">12</span>
+            </label>
+        </div>
+        <label class="switch">
+            <p class="switchText">Numeros</p>
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <label class="switch">
+            <p class="switchText">Letras</p>
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <label class="switch">
+            <p class="switchText">Letras Maiusculas </p>
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <label class="switch">
+            <p class="switchText">Caractere Especial</p>
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+
+        <div>
+            <button id="gerar">GERAR</button> <span class="pass">SUA SENHA</span>
+        </div>
+    </div>
+</body>
+
+
+
+<script src="index.js"></script>
+
+</html>
